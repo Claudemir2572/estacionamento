@@ -16,17 +16,21 @@
 ### Placa
 ### Saida
 
-# Acho que isso
+#### Acho que isso
 
-# Se você fosse dono de um estacionamento e o sistema custa caro e você tem pouco dinheiro o que você solicitaria para um programador para 
-no mínimos você ter um pouco de controle?
+### Se você fosse dono de um estacionamento e o sistema custa caro e você tem pouco dinheiro o que você solicitaria para um programador para no mínimo você ter um pouco de controle?
 
-# Pouca coisa mais nunca pensei em um estacionamento pra falar a verdade, mais pra poder ficar uma aula mais pratica também temos que ter poucoas coisas.
+#### Pouca coisa mais nunca pensei em um estacionamento pra falar a verdade, mais pra poder ficar uma aula mais pratica também temos que ter poucoas coisas.
 
 1 Precisaremos criar um projeto no eclipse
+
 2 Colocar um nome no package de estacionamento
+
 3 Fazer uma classe com metodo Main (Estacionamento)
+
 4 Fazer uma classe sem metodo Main para descrever um carro com placa e modelo
+
 5 Fazer uma classe sem metodo Main para descrever a entrada e saida do carro ou seja a estadia
+
 6 Instanciar as classes no metodo main da classe Estacionamenot
 
