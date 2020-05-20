@@ -22,15 +22,15 @@
 
 #### Pouca coisa mais nunca pensei em um estacionamento pra falar a verdade, mais pra poder ficar uma aula mais pratica também temos que ter poucoas coisas.
 
-1 Precisaremos criar um projeto no eclipse
+[x] Precisaremos criar um projeto no eclipse
 
-2 Colocar um nome no package de estacionamento
+[x] Colocar um nome no package de estacionamento
 
-3 Fazer uma classe com metodo Main (Estacionamento)
+[x] Fazer uma classe com metodo Main (Estacionamento)
 
-4 Fazer uma classe sem metodo Main para descrever um carro com placa e modelo
+[] Fazer uma classe sem metodo Main para descrever um carro com placa e modelo
 
-5 Fazer uma classe sem metodo Main para descrever a entrada e saida do carro ou seja a estadia
+[] Fazer uma classe sem metodo Main para descrever a entrada e saida do carro ou seja a estadia
 
-6 Instanciar as classes no metodo main da classe Estacionamenot
+[] Instanciar as classes no metodo main da classe Estacionamenot
 
