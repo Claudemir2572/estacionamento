@@ -1,9 +1,13 @@
+//o que pe o estadia minusculo mesmo
 package estacionamento.estadia;
 
 import java.time.LocalTime;
 
+import estacionamento.model.Carro;
+
 public class Estadia {
 	
+	private Carro carro;
 	private LocalTime entrada;
 	private LocalTime saida;
 	
@@ -18,5 +22,12 @@ public class Estadia {
 	}
 	public void setSaida(LocalTime saida) {
 		this.saida = saida;
-	}	
+	}
+	public Carro getCarro() {
+		return carro;
+	}
+	public void setCarro(Carro carro) {
+		this.carro = carro;
+	}
+
 }
