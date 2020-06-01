@@ -3,7 +3,7 @@ package estacionamento.estadia;
 
 import java.time.LocalTime;
 
-import estacionamento.model.Carro;
+import estacionamento.entidade.Carro;
 
 public class Estadia {
 	
