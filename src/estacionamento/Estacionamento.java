@@ -24,7 +24,7 @@ public class Estacionamento {
 
 	private static void programa() {
 		Scanner scanner = new Scanner(System.in);
-		Carro carro = new Carro();
+		
 		int opcao=0;
 		// Map é uma interface ( que na verdade é um mapa que fornece os dados chaveados)
 		// HashMap é uma implementação
@@ -47,7 +47,7 @@ public class Estacionamento {
 			
 			if(opcao==1) {
 				Estadia estadia = new Estadia();
-				
+				Carro carro = new Carro();
 				estadia.setEntrada(LocalTime.now());
 				System.out.println("Digite uma Placa");
 				carro.setPlaca(scanner.next());
@@ -69,7 +69,7 @@ public class Estacionamento {
 				
 				if( estadias.get(placaDaSaida) != null) { 
 				
-					Estadia estadiaDaSaida = estadias.get(placaDaSaida); //Procura a placa DA SAIDA digitada no Map depois que achar ele retorna a estadia (estadiaDaSaida(saida))
+					Estadia estadiaDaSaida = estadias.get(placaDaSaida); //Procura a placa DA SAIDA digitada no Map (na lista) depois que achar ele retorna a estadia (estadiaDaSaida(saida))
 					estadiaDaSaida.setSaida(LocalTime.now());
 					// put recebe a placa e a estadia
 					estadias.put(placaDaSaida, estadiaDaSaida); // devolvendo para dentro do Map com a hora de saida
@@ -108,20 +108,25 @@ public class Estacionamento {
 				// entradas( estadias.entrySet()
 				for ( Map.Entry<String, Estadia> entry : estadias.entrySet() ) {
 					StringBuilder mensagem = new StringBuilder();
-					mensagem.append("O carro placa: [ " + entry.getKey());
-					mensagem.append(" ] modelo: [ " + entry.getValue().getCarro().getModelo());
-					mensagem.append(" ] estacionou: [ " + entry.getValue().getEntrada() + "] ");
+					mensagem.append("O Carro Placa: [ " + entry.getKey());
+					mensagem.append(" ] Modelo: [ " + entry.getValue().getCarro().getModelo());
+					mensagem.append(" ] Estacionou: [ " + entry.getValue().getEntrada() + "] ");
 					
 					if(entry.getValue().getSaida()!=null) {
-						mensagem.append("até: [ " + entry.getValue().getSaida() + " ] ");
-						mensagem.append(" a permanência foi de: [ " + calculaPermanencia(entry.getValue()) + " ] ");
+						mensagem.append("Até: [ " + entry.getValue().getSaida() + " ] ");
+						mensagem.append(" A Permanência Foi De: [ " + calculaPermanencia(entry.getValue()) + " ] ");
 					}
 					
-					
-					
+										
 					System.out.println(mensagem);
 				}
+			} else if (opcao==7) {
+				for ( Map.Entry<String, Estadia> entry : estadias.entrySet() ) {
+					System.out.println(entry.getValue().getCarro().getPlaca() + " / " + " / " + entry.getValue().getCarro().getModelo() );
+				}
 			}
+			
+			
 		}while(opcao!=0);
 		scanner.close();
 	}
